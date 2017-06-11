@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="MobileBankingDeploy" basedir="." default="deploy-all" >
+<project name="webappDeploy" basedir="." default="deploy-all" >
 
 	<property file="deploy.properties" />
     <import file="build.xml" />

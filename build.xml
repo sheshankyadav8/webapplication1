@@ -15,8 +15,9 @@
 	<tstamp>
 	    <format property="builddatetime" pattern="yyyyMMddhhmm" locale="en,GB"/>
 	  </tstamp>
-	<target name="delete" >
+	<target name="clean" >
 		<delete dir="${web.dir}/WEB-INF/classes" />		
+		<delete dir="${web.dir}" />	
 	</target>
 	
 	<target name="init" >
@@ -40,7 +41,7 @@
 		<war basedir="${web.dir}" destfile="${war.dir}/webapp.war"/>
 		</target>
 
- <target name="all" depends="delete,init,compile,package" /> 
+ <target name="all" depends="clean,init,compile,package" /> 
 	
 	
 	<target name="exe_deploy" >
