@@ -17,7 +17,7 @@
 	  </tstamp>
 	<target name="clean" >
 		<delete dir="${web.dir}/WEB-INF/classes" />		
-		<delete dir="${web.dir}" />	
+		<delete dir="${war.dir}" />	
 	</target>
 	
 	<target name="init" >
